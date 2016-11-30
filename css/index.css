@@ -1,0 +1,85 @@
+.transitionALL {
+  transition: all 1s;
+}
+.section {
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 999;
+}
+header .logo {
+  float: left;
+}
+header .logo a {
+  display: block;
+  text-indent: -9999px;
+}
+header #menu {
+  float: right;
+}
+header #menu li {
+  float: left;
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+header #menu li a {
+  float: left;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+}
+header #menu .active a {
+  color: #fff;
+  background-color: #333;
+}
+.page1 {
+  background: url(../img/b1_bg.jpg) center center;
+}
+.images_left {
+  width: 709px;
+  height: 625px;
+  position: absolute;
+  left: -40px;
+  top: 0px;
+  opacity: 0;
+  z-index: 8;
+}
+.left_message {
+  width: 328px;
+  height: 211px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -110px;
+  opacity: 0;
+  z-index: 8;
+}
+.bottom_message {
+  width: 1440px;
+  height: 441px;
+  position: absolute;
+  bottom: -250px;
+  left: 50%;
+  margin-left: -720px;
+  background: url(../img/b1_01.png) center center no-repeat;
+  z-index: 7;
+  opacity: 0;
+}
+.comeout .images_left {
+  left: 30px;
+  top: 100px;
+  opacity: 1;
+}
+.comeout .left_message {
+  right: 120px;
+  opacity: 1;
+}
+.comeout .bottom_message {
+  bottom: -150px;
+  opacity: 1;
+}
