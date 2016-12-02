@@ -7,8 +7,6 @@ $(function(){
     $('#dowebok').fullpage({
         /*是否显示项目导航 默认值是false*/
         navigation : true,
-        // 每一个section的背景颜色
-        sectionsColor : ['red','green','blue','gold'],
         /*定义锚链接*/
         anchors: ['page1', 'page2', 'page3', 'page4'],
         /* 设置菜单导航 值对应菜单盒子的ID值*/

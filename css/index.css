@@ -5,20 +5,27 @@
   overflow: hidden;
 }
 header {
+  background-color: #fff;
   width: 100%;
   position: fixed;
-  left: 10px;
-  top: 10px;
+  left: 0px;
+  top: 0px;
   z-index: 999;
 }
 header .logo {
   float: left;
 }
 header .logo a {
+  height: 60px;
+  width: 100px;
   display: block;
+  background: url(../img/images.jpg) 0 0 no-repeat;
+  -webkit-background-size: 100px 60px;
+  background-size: 100px 60px;
   text-indent: -9999px;
 }
 header #menu {
+  margin-top: 10px;
   float: right;
 }
 header #menu li {
@@ -40,6 +47,9 @@ header #menu .active a {
 .page1 {
   background: url(../img/b1_bg.jpg) center center;
 }
+.page2 {
+  background: url(../img/b6_bg.jpg) center center;
+}
 .images_left {
   width: 709px;
   height: 625px;
@@ -54,10 +64,15 @@ header #menu .active a {
   height: 211px;
   position: absolute;
   right: 0px;
-  top: 50%;
+  top: 40%;
   margin-top: -110px;
   opacity: 0;
   z-index: 8;
+}
+.images_right {
+  width: 200px;
+  border-radius: 500px;
+  opacity: 0.6;
 }
 .bottom_message {
   width: 1440px;
@@ -82,4 +97,285 @@ header #menu .active a {
 .comeout .bottom_message {
   bottom: -150px;
   opacity: 1;
+}
+/* 第六屏开始 */
+.technical {
+  color: #fff;
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+.b6_img {
+  opacity: 0;
+  top: 90px;
+  left: 170px;
+  position: absolute;
+}
+.comeout .b6_img {
+  opacity: 1;
+}
+.technical h2 {
+  font-size: 38px;
+  text-align: left;
+  line-height: 30px;
+  margin-left: 20px;
+  opacity: 0;
+}
+.technical h2 span {
+  font-size: 16px;
+  font-weight: normal;
+}
+.comeout .technical h2 {
+  opacity: 1;
+}
+.txtDian {
+  position: relative;
+}
+.txtDian li {
+  position: absolute;
+  font-size: 14px;
+  opacity: 0;
+}
+.comeout .txtDian li {
+  opacity: 1;
+}
+ins {
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  background: url(../img/b6_ico.png);
+}
+.txtDian > li > a {
+  display: block;
+  color: #fff;
+}
+.txtLi_01 {
+  left: 214px;
+  top: 5px;
+  opacity: 0;
+}
+.txtLi_01 ins {
+  left: 100px;
+  top: 19px;
+}
+.txtLi_02 {
+  right: 300px;
+  top: 12px;
+  opacity: 0;
+}
+.txtLi_02 ins {
+  right: 105px;
+  top: 13px;
+}
+.txtLi_03 {
+  right: 160px;
+  top: 154px;
+  text-align: left;
+  opacity: 0;
+}
+.txtLi_03 ins {
+  right: 104px;
+  top: 15px;
+}
+.txtLi_04 {
+  right: 218px;
+  top: 370px;
+  opacity: 0;
+}
+.txtLi_04 ins {
+  right: 96px;
+  top: -19px;
+}
+.txtLi_05 {
+  right: 456px;
+  top: 453px;
+  opacity: 0;
+}
+.txtLi_05 ins {
+  right: 64px;
+  top: -22px;
+}
+.txtLi_06 {
+  left: 125px;
+  top: 354px;
+  opacity: 0;
+}
+.txtLi_06 ins {
+  left: 98px;
+  top: -3px;
+}
+.txtLi_07 {
+  left: 35px;
+  top: 154px;
+  opacity: 0;
+}
+.txtLi_07 ins {
+  left: 139px;
+  top: 17px;
+}
+.fangXiang {
+  width: 27px;
+  height: 34px;
+  /*background:red;*/
+  position: absolute;
+  left: 424px;
+  top: 212px;
+  overflow: hidden;
+}
+.up,
+.down {
+  width: 10px;
+  height: 33px;
+  position: absolute;
+  background: url(../img/b6_arrow.png) -1px -1px no-repeat;
+}
+.up {
+  left: 1px;
+  top: 35px;
+  animation: up 1.5s linear 2s infinite;
+}
+@-webkit-keyframes up {
+  0% {
+    top: 40px;
+  }
+  100% {
+    top: -40px;
+  }
+}
+.down {
+  right: 1px;
+  top: -35px;
+  background-position: -16px 0;
+  animation: down 1.5s linear 2s infinite;
+}
+@-webkit-keyframes down {
+  0% {
+    top: -40px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+.b6_01 {
+  width: 280px;
+  height: 372px;
+  position: absolute;
+  right: 720px;
+  top: 400px;
+  opacity: 0;
+  background: url(../img/b6_01.png);
+}
+.comeout .b6_01 {
+  right: -60px;
+  top: 335px;
+  opacity: 1;
+}
+/* 第六屏结束 */
+.loader {
+  cursor: pointer;
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+  z-index: 10;
+}
+.loader .pacman > div:nth-child(1) {
+  position: relative;
+  z-index: 100;
+}
+.loader .pacman > div:nth-child(2) {
+  -webkit-animation: pacman-balls 1s 0s infinite linear;
+  animation: pacman-balls 1s 0s infinite linear;
+}
+.loader .pacman > div:nth-child(3) {
+  -webkit-animation: pacman-balls 1s 0.33s infinite linear;
+  animation: pacman-balls 1s 0.33s infinite linear;
+}
+.loader .pacman > div:nth-child(4) {
+  -webkit-animation: pacman-balls 1s 0.66s infinite linear;
+  animation: pacman-balls 1s 0.66s infinite linear;
+}
+.loader .pacman > div:nth-child(5) {
+  -webkit-animation: pacman-balls 1s 0.99s infinite linear;
+  animation: pacman-balls 1s 0.99s infinite linear;
+}
+.loader .pacman > div:first-of-type {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  -webkit-animation: rotate_pacman_half_up 0.5s 0s infinite;
+  animation: rotate_pacman_half_up 0.5s 0s infinite;
+}
+.loader .pacman > div:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  -webkit-animation: rotate_pacman_half_down 0.5s 0s infinite;
+  animation: rotate_pacman_half_down 0.5s 0s infinite;
+  margin-top: -50px;
+}
+.loader .pacman > div:nth-child(3),
+.loader .pacman > div:nth-child(4),
+.loader .pacman > div:nth-child(5),
+.loader .pacman > div:nth-child(6) {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  -webkit-transform: translate(0, -6.25px);
+  -ms-transform: translate(0, -6.25px);
+  transform: translate(0, -6.25px);
+  top: 25px;
+  left: 100px;
+}
+@keyframes pacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: translate(-100px, -6.25px);
+    transform: translate(-100px, -6.25px);
+  }
+}
+@keyframes rotate_pacman_half_up {
+  0% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+@keyframes rotate_pacman_half_down {
+  0% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
 }
